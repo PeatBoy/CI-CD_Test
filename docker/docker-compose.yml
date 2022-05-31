@@ -8,3 +8,7 @@ services:
     container_name: CICDTest
     ports:
       - 8088:8080
+    deploy:
+      resources:
+        limits:
+          memory: 200M
