@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @RequestMapping("/test")
     public String sayHello(){
-        return "hello CI/CD world!";
+        return "hello CI/CD world! V1.4.5";
     }
 }

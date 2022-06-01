@@ -15,7 +15,7 @@ pipeline {
   stages {
     stage('拉取 git 仓库代码'){
       steps{
-        checkout([$class: 'GitSCM', branches: [[name: '${tag}']], extensions: [], userRemoteConfigs: [[credentialsId: 'd1a5d26f-55e4-4fa3-b1ea-4562fd883230', url: 'git@github.com:PeatBoy/CI-CD_Test.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '${tag}']], extensions: [], userRemoteConfigs: [[credentialsId: 'd1a5d26f-55e4-4fa3-b1ea-4562fd883230', url: 'https://github.com/PeatBoy/CI-CD_Test.git']]])
       }
     }
     stage('使用 Maven 构建项目'){
